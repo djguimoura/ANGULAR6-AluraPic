@@ -1,0 +1,9 @@
+<!--SE hasMore QUE ESTÁ DEFINIDO COMO "False" NO COMPONET DO LOAD BUTTON FOR VERDADEIRO EXIBE O "BUTTON" ABAIXO, SENÃO EXIBE A OUTRA MENSAGEM DO "#messageTemplate"-->
+<div class="text-center" *ngIf="hasMore; else messageTemplate">
+  <button class="btn btn-primary">Load more</button>
+</div>
+
+<!--VARIÁVEL DE TEMPLATE DEFINIDA COMO "#messageTemplate" -->
+<ng-template #messageTemplate>
+  <p class="text-center text-muted">No more data to load</p>
+</ng-template>

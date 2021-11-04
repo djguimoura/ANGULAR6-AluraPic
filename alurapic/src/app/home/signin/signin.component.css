@@ -1,0 +1,16 @@
+.center-form {
+    position: relative;
+    min-height: 100vh;
+}
+
+.center-form > form {
+    width: 60%;
+    position: absolute;
+<<<<<<< HEAD
+    top: 10%;
+=======
+    top: 15%;
+>>>>>>> 34c640d (publish final version project alurapic)
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%)
+}

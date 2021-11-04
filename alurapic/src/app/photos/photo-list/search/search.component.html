@@ -1,0 +1,14 @@
+<div class="text-center mt-3 mb-3">
+    <form>
+        <!--mr É UMA CLASS DO BOOTSTRAP PARA APLICAR MARGEM, MR (MARGIN-RIGHT), ML (MARGIN-LEFT), O "fa-1x" AJUSTA O TAMANHO DO ÍCONE, QNT MAIOR O NÚMERO MAIOR O ÍCONE-->
+        <i aria-hidden="true" class="fa fa-search mr-2"></i>
+        <input
+            class="rounded"
+            type="search"
+            placeholder="search..."
+            autofocus
+            (keyup)="debounce.next($event.target.value)"
+            [value]="value"
+            >
+    </form>
+</div>
